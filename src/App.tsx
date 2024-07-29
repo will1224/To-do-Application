@@ -22,12 +22,13 @@ function App() {
     setTasks(updatedArr);
   };
   return (
-    <div>
+    <div className="main">
+      <h1>What Tasks Needs To Be Done Today?</h1>
       <TodoForm newTask={updateTasks} />
       <ul>
         {tasks.map((task, index) => (
           <TodoItem
-            key={task}
+            key={task + index}
             text={task}
             index={index}
             deleteItem={deleteItem}

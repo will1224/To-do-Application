@@ -1,3 +1,4 @@
+
 *{
     box-sizing: border-box;
     margin:0;
@@ -5,9 +6,110 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 body {
-    background: #161a2b;
+    background: linear-gradient(
+    90deg,
+    rgb(255, 105, 218) 0%,
+    rgb(103, 116, 236) 100%
+  );
 }
-todo-form {
-    display:flex;
+.main{
+    display: flex;
     flex-direction: column;
+    justify-content: start;
+    width: 60vh;
+    min-height: 70vh;
+    background: #161a2b;
+    align-items: center;
+    margin: 2vh auto;
+    border-radius: 10px;
+    padding-bottom: 3vh;
 }
+h1{
+    margin: 3vh;
+    color: white;
+    font-size: 24px;
+}
+
+.todo-input{
+    padding: 10px 32px 10px 16px;
+    border: 2px solid magenta;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    width: 30vh;
+    background: transparent;
+    color: white;
+}
+.todo-input::placeholder{
+    color: white;
+}
+.todo-button{
+    background-color: magenta;
+    border: none;
+    padding: 12px;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    color: white;
+}
+
+.task {
+    background: linear-gradient(
+        90deg,
+        rgb(77, 154, 255) 0%,
+        rgb(255, 44, 227) 100%
+    );
+    border-radius: 5px;
+    margin: 1em 0 1em;
+    min-width: 20em;
+    word-wrap: break-word; 
+    overflow-wrap: break-word;
+    white-space: normal; 
+    border: none;
+    padding: 1em; 
+    font-size: 1em;
+    display: flex; 
+    align-items: flex-start; 
+  }
+  
+  .task-text {
+    flex-grow: 1;
+    margin-right: 1em; 
+  }
+  
+  .task-text h1 {
+    font-size: 1em;
+    margin: 0;
+    word-wrap: break-word; 
+    overflow-wrap: break-word;
+    max-width: 20em; 
+  }
+  
+  .task form {
+    display: flex;
+    align-items: center; 
+  }
+  
+  .task input {
+    width: 100%;
+    box-sizing: border-box; 
+    font-size: 1em; 
+    background: #1a50a0;
+    border-radius: 3px;
+    border: none;
+    color: white;
+    
+  }
+  .task button {
+    background: none; 
+    border: none; 
+    cursor: pointer; 
+    padding: 0; 
+    margin-left: 0.5em; 
+  }
+  
+  .icons {
+    cursor: pointer;
+    color: white;
+    display: flex;
+    gap: 0.5em; 
+  }
+ 
